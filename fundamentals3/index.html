@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //1: Add 7
+    function add7(num) {
+      return num + 7;
+    }
+
+    let add7Arrow = num => num + 7;
+
+    console.log(add7(3));
+    console.log(add7Arrow(7));
+
+    //2: Multiply
+    function multiply(x,y) {
+      return x * y;
+    }
+
+    let multiplyArrow = (x,y) => x * y;
+
+    console.log(multiply(2,4));
+    console.log(multiplyArrow(3,3));
+
+    //3: Capitalize
+
+    function capitalize(original) {
+      let lower = original.toLowerCase();
+      let final = lower.charAt(0).toUpperCase() + lower.slice(1);
+      return final;
+    }
+
+    console.log(capitalize("HARRISON"));
+
+    //4: Last letter
+
+    function lastLetter(original) {
+      let last = original.charAt(original.length - 1);
+      return last;
+    }
+
+    console.log(lastLetter("hideout"));
+
+  </script>
+</body>
+</html>
